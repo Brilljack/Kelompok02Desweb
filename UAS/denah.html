@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denah HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <ul>
+        <li>
+            <a href=""><i class="fa fa-home"></i> Home</a>
+        </li>
+        <li class="dropdown">
+            <a href=""><i class="fa fa-th-list"></i> Category</a>
+            <div class="dropdown-content">
+                <a href="Page_Novel.html">Novel</a>    
+                <a href="Page_Komik.html">Komik</a>
+                <a href="Page_Biografi.html">Biografi</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href=""><i class="fa fa-address-book"></i> Contact Person</a>
+            <div class="dropdown-content">
+                <a href="Page_Novel.html">WhatsApp</a>    
+                <a href="Page_Komik.html">Telegram</a>
+                <a href="Page_Biografi.html">Instagram</a>
+            </div>
+        </li>
+    </ul>
+    <div class="white-box content">
+        <h1>Denah Perpustakaan</h1>
+        <small>tempat pencarian rak buku</small>
+        <hr>
+        <div class="text-center">
+            <img src="denah.png" usemap="#image-map">
+            
+            <map name="image-map">
+                <area id="denah" alt="Bangku Baca A" data-name="Bangku Baca A" title="Bangku Baca A" href="" coords="106,32,198,156" shape="rect">
+                <area id="denah" alt="Bangku Baca B" data-name="Bangku Baca B" title="Bangku Baca B" href="" coords="209,30,300,157" shape="rect">
+                <area id="denah" alt="Bangku Baca C" data-name="Bangku Baca C" title="Bangku Baca C" href="" coords="109,181,199,309" shape="rect">
+                <area id="denah" alt="Bangku Baca D" data-name="Bangku Baca D" title="Bangku Baca D" href="" coords="211,181,303,311" shape="rect">
+                <area id="denah" alt="Admin" data-name="Admin" href="" title="Admin" href="" coords="0,152,76,487" shape="rect">
+                <area id="denah" alt="Meja Komputer(Cari Buku)" data-name="Meja Komputer(Cari Buku)" title="Meja Komputer(Cari Buku)" href="" coords="76,379,308,489" shape="rect">
+                <area id="denah" alt="Rak Buku A" data-name="Rak Buku A" title="Rak Buku A" href="" coords="345,23,552,159" shape="rect">
+                <area id="denah" alt="Rak Buku B" data-name="Rak Buku B" title="Rak Buku B" href="" coords="347,182,552,318" shape="rect">
+                <area id="denah" alt="Rak Buku C" data-name="Rak Buku C" title="Rak Buku C" href="" coords="346,341,553,461" shape="rect">
+                <area id="denah" alt="Rak Buku D" data-name="Rak Buku D" title="Rak Buku D" href="" coords="580,25,667,284" shape="rect">
+                <area id="denah" alt="Rak Buku E" data-name="Rak Buku E" title="Rak Buku E" href="" coords="694,23,782,281" shape="rect">
+                <area id="denah" alt="Rak Buku F" data-name="Rak Buku F" title="Rak Buku F" href="" coords="578,315,786,464" shape="rect">
+                <area id="denah" alt="Pintu Keluar Masuk" data-name="Pintu Keluar Masuk" title="Pintu Keluar Masuk" href="" coords="1,57,39,54,39,38,85,71,38,108,38,88,0,91" shape="poly">
+            </map>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).on('click', '#denah', function(e){
+        var title = e.currentTarget.dataset.name;
+        alert(title);
+    })
+</script>
