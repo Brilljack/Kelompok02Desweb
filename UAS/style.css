@@ -83,6 +83,10 @@ img{
     flex:0 0 auto;
     width:25%
 }
+.column-2{
+    flex:0 0 auto;
+    width:50%
+}
 .p-0{
     padding: 0 !important;
 }
@@ -132,13 +136,17 @@ a{
     touch-action: manipulation;
     cursor: pointer;
     user-select: none;
+    color: white;
 }
 .btn-danger{
-    background-color: red;
+    background-color: #e74a25;
 }
 .btn-block{
     display: block;
     width: 80%;
+}
+.btn-rounded-5{
+    border-radius: 5px;
 }
 .btn-rounded{
     border-radius: 10px;
@@ -160,4 +168,44 @@ small{
 }
 .p-3{
     padding: 0px 5px 0px 5px !important;
+}
+.form-control{
+    background-color: #fff;
+    border: 1px solid #e5ebec;
+    border-radius: 0;
+    box-shadow: none;
+    color: #565656;
+    height: 30px;
+    width: 90%;
+    max-width: 100%;
+    padding: 1px 12px;
+}
+.form{
+    margin-bottom: 5px;
+}
+small a{
+    color: blueviolet;
+}
+.mr-5{
+    margin-right: 15px;
+}
+.left{
+    margin-right: 10px;
+}
+.right{
+    text-align: right;
+}
+.text-muted{
+    color: grey;
+    font-size: 15px;
+    text-decoration: underline;
+}
+footer{
+    background: #012369;
+    color: #fff;
+    font-size: 12px;
+    padding: 15px 0;
+    border-top-color: #06732A;
+    border-top-style: solid;
+    border-top-width: 7px;
 }
